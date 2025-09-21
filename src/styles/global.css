@@ -517,9 +517,12 @@ input[type="file"] {
   color: var(--color-gray-600);
 }
 
-.detail-nav-buttons {
+.detail-navigation {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
 }
 
 .nav-button {
