@@ -1143,8 +1143,11 @@ Your deliverable is a lightweight micro-service or FHIR terminology plugin offer
 ### Teams should demonstrate
 
 1. Ingesting the NAMASTE CSV export and generating FHIR CodeSystem + ConceptMap.
+
 2. Fetching TM2, Biomedicine updates from the WHO ICD-API and merging into your service.
+
 3. A simple web or CLI interface to search NAMASTE terms, WHO International Terminologies of Ayurveda, see mapped TM2 codes, and construct a FHIR ProblemList entry.
+
 4. Version tracking and consent metadata to satisfy India’s 2016 EHR Standards (FHIR R4, ISO 22600, SNOMED-CT/LOINC semantics).
 
 ## Expected Solution
@@ -2184,17 +2187,25 @@ In the existing fire assay testing method, heterogeneity is addressed by melting
 ## Expected Solution
 
 1. Develop and implement a **non-destructive assaying method** that matches the accuracy of fire assay without damaging the jewellery, while being capable of handling heterogeneous compositions (solders, fillers, non-metallic substances).
+
 2. Eliminate emissions of harmful substances (lead oxide, nitrous fumes).
+
 3. Achieve repeatability close to that of fire assay, ideally within ±0.5 ppt (as per IS 1418).
+
 4. Method selected will be validated for regulatory and commercial applications.
 
 ## Deliverables
 
 1. Detailed non-destructive innovative testing method with technical explanation
+
 2. References/bibliography related to the technical paper
+
 3. Scientific principles underlying the approach
+
 4. Feasibility studies and expected challenges
+
 5. Methodology for validation including accuracy assessment
+
 6. Explanatory note on potential for regulatory and commercial application
 
 ---
@@ -2282,13 +2293,16 @@ Develop an AI-powered automated compliance checker that can scan e-commerce plat
 ## Expected Deliverables
 
 1. A working prototype of the compliance checker tool (Web-based or standalone app)
+
 2. Technical documentation including:
    - Data pipeline design
    - OCR and ML models used
    - Validation methodology
 
 3. Sample dataset with annotation (compliant/non-compliant examples)
+
 4. Dashboard demo with live/test crawl outputs
+
 5. Feasibility report for deployment with government bodies
 
 ## Benefits And Impact
@@ -2374,9 +2388,13 @@ Final year UG (B.Tech/B.E) students in Electronics, Embedded Systems, Instrument
 ## Expected Deliverables
 
 1. Prototype device or software module to detect tampering (hardware and/or firmware)
+
 2. Dashboard or interface for regulators to view alerts and device health
+
 3. Tamper-logging and reporting features
+
 4. Validation data from controlled tamper scenarios
+
 5. Whitepaper/ technical documentation describing architecture, logic, limitations and future potential
 
 ## Benefits And Impact
@@ -2465,6 +2483,7 @@ The proposals aim to develop a strict system to ensure that every citizen is tra
    iv. App-based monitoring.
 
 2. Phase-wise training to all Waste Workers
+
 3. Formation of Area Committee for Monitoring - to be called as “Green Champions”: Decentralised approach for Monitoring has to be done at every step of Waste Management for bulk waste generators, residential areas, commercial & Public semi-public building, Industrial buildings, etc.
 
    i. Training of all Waste Generators
@@ -2475,9 +2494,13 @@ The proposals aim to develop a strict system to ensure that every citizen is tra
    vi. Waste Disposal
 
 4. Incentive based approach: Incentive to Bulk waste generators and other buildings for source segregation.
+
 5. Waste Movements in ULBs: Taking example from Karnataka’s Yadgir city, “If you see waste, send photo” similar movement to be made mandatory for every ULB regardless of its size and population, to ensure community participation.
+
 6. Community Participation: One day of all working staff regardless of employment type to be engaged in Cleaning of Public areas, waste management. Inspired from Cleaning-day followed in schools every week, every waste generator to be responsible for keeping the country clean and contributing to waste management, starting from Govt. sector.
+
 7. Penalization system: Fines to be imposed and no waste collection for buildings not segregating waste at source as punishment.
+
 8. Waste Management Facilities to be made available in every ULB:
 
    i. Biomethanization plant
@@ -2943,29 +2966,41 @@ Identifying and assessing athletic talent in a country as vast and diverse as In
 The Sports Authority of India (SAI) requires an innovative, mobile-based solution to democratize sports talent assessment. The proposed platform should:
 
 1. Enable athletes to download an app and record videos of their performance in the prescribed fitness assessment tests.
+
 2. Use AI/ML-based on-device verification to analyze the recorded videos for accuracy and authenticity (e.g., detecting jump height, counting sit-ups, or measuring time/distance in runs).
+
 3. Securely submit verified data to SAI servers for further evaluation and athlete profiling.
+
 4. Be low-cost and lightweight, ensuring accessibility even on entry-level smartphones and low-bandwidth networks.
 
 ## Innovative Features
 
 1. AI-based Cheat Detection: Identify anomalies or manipulations (e.g., tampered videos or incorrect movements) to ensure fair assessments.
+
 2. Offline Video Analysis: Perform preliminary performance analysis directly on the device without requiring continuous internet connectivity.
+
 3. Performance Benchmarking: Compare athlete performance against age/gender-based benchmarks, providing instant feedback.
+
 4. Gamified User Interface: Use progress badges, leaderboards, and interactive visuals to engage athletes and encourage participation.
+
 5. Auto-Test Segmentation: Automatically detect and segment performance clips (e.g., counting reps in sit-ups or analyzing vertical jumps) to reduce manual effort.
 
 ## Expected Deliverables
 
 1. A mobile application (Android/iOS) that allows video recording and assessment of athletes performance across the test batteries.
+
 2. AI/ML modules for on-device video analysis, verification of test results, and cheat detection.
+
 3. A secure backend system to transmit data to the Sports Authority of India for further processing.
+
 4. A dashboard for officials to view and evaluate verified performance data.
 
 ## Expected Impact
 
 1. Democratization of sports talent assessment, reaching even remote areas.
+
 2. Low-cost, scalable solution enabling mass participation in talent identification initiatives.
+
 3. Improved efficiency and transparency in evaluating and discovering potential athletes.
 
 **Dataset:** https://sih.gov.in/dataset/Youth_Affairs_Annexure_A_SIH25073.pdf
@@ -2995,10 +3030,15 @@ Build an AI-powered personal farming assistant that acts like a digital companio
 ## Core Features
 
 1. Farmer & Farm Profiling: Capture key details-location, land size, crop, soil type, irrigation.
+
 2. Conversational Interface: Enable farmers to interact in Malayalam via voice or text.
+
 3. Activity Tracking: Let farmers log events like sowing, irrigation, input use, or pest issues in simple language.
+
 4. Personalized Advisory: Use AI to give proactive, contextual guidance-e.g., “Rain expected, avoid spraying tomorrow,” or “Pest outbreak reported nearby-inspect your brinjal crop.”
+
 5. Reminders & Alerts: Send timely nudges for crop operations, scheme deadlines, and price trends.
+
 6. Knowledge Engine: Pull from local crop calendars, pest data, and best practices to continuously improve recommendations.
 
 ## Expected Impact
@@ -3167,11 +3207,17 @@ As KMRL prepares to expand its corridor, add two new depots, and integrate emerg
 Kochi Metro must decide every night which of its 25 four-car trainsets will enter revenue service at dawn, which remain on standby, and which are held back in the Inspection Bay Line (IBL) for maintenance. The decision hinges on six inter-dependent variables:
 
 1. Fitness Certificates - validity windows issued by Rolling-Stock, Signalling and Telecom departments.
+
 2. Job-Card Status - open vs. closed work orders exported from IBM Maximo.
+
 3. Branding Priorities - contractual commitments that dictate exterior wrap exposure hours.
+
 4. Mileage Balancing - kilometre allocation to equalise bogie, brake-pad and HVAC wear.
+
 5. Cleaning & Detailing Slots - available manpower and bay occupancy for interior deep-cleaning.
+
 6. Stabling Geometry - physical bay positions that minimise nightly shunting and morning turn-out time.
+
    At present these data points reside in siloed spreadsheets, manual logbooks, and daily WhatsApp updates. Supervisors reconcile them in a time-compressed window (21:00-23:00 IST) using ad-hoc filters and experience-based heuristics. The process is opaque, non-repeatable, and highly error-prone:
    - Missing a single telecom clearance can force an unscheduled rake withdrawal, eroding the 99.5 % punctuality KPI.
    - Uneven mileage assignment accelerates component fatigue, inflating maintenance cost.
@@ -3350,9 +3396,13 @@ Mental health issues among college students have significantly increased in rece
 Develop a Digital Psychological Intervention System (web-based and/or mobile app) with the following capabilities:
 
 1. **AI-guided First-Aid Support** Interactive chat box that offers coping strategies and refers students to professionals when needed.
+
 2. **Confidential Booking System** For appointment with on-campus counsellor or mental health helpline.
+
 3. **Psychoeducational Resource Hub** Videos, relaxation audio, mental wellness guides in regional languages.
+
 4. **Peer Support Platform** Moderated peer-to-peer support forum with trained student volunteers.
+
 5. **Admin Dashboard** Anonymous data analytics for authorities to recognize trends and plan interventions.
 
 ### Department/Section Owning the Problem
@@ -3869,9 +3919,13 @@ The Forest Rights Act (FRA), 2006 recognizes the rights of forest-dwelling commu
 ## Project Objectives
 
 1. Digitize and standardize legacy data of FRA claims, verifications, and pattas, and integrate with FRA Atlas. FRA patta holders’ shapefiles to be integrated.
+
 2. Create an FRA Atlas showing potential and granted FRA areas using AI and satellite data.
+
 3. Integrate a WebGIS portal to visualize and manage spatial and socio-economic data.
+
 4. Use Remote Sensing and AI/ML to map capital and social assets (ponds, farms, forest resources) of FRA-holding villages.
+
 5. Build a Decision Support System (DSS) to recommend and layer CSS schemes based on mapped data, enhancing targeted development.
 
 ## AI & Tech Components
@@ -3902,8 +3956,11 @@ The Forest Rights Act (FRA), 2006 recognizes the rights of forest-dwelling commu
 ## Deliverables
 
 1. AI-processed digital archive of FRA claims & decisions.
+
 2. An interactive FRA Atlas on a WebGIS platform.
+
 3. AI-generated asset maps for all FRA villages.
+
 4. A DSS engine for scheme layering and policy formulation.
 
 ## Target Users
@@ -4724,7 +4781,9 @@ This project involves the design and development of a switch-controlled wrist-ha
 At the core of the system is an ESP32 microprocessor, which controls the servo motor based on input from a 3-way switch. The switch enables intuitive control through three discrete positions:
 
 1. Position "0" - Neutral/rest position
+
 2. Position "1" - Initiates wrist-hand flexion and grasping
+
 3. Position "11" - Triggers release of the grasp
 
 The orthosis implements a 3-jaw chuck prehension pattern
@@ -5356,7 +5415,9 @@ Modern armed conflicts increasingly involve the deployment of autonomous drones 
 To develop an effective solution for autonomous swarm-based drone counter engagement, the following assumptions and requirements must be considered:
 
 1. Armament Capability: Each drone is with armament capability. It is to be assumed that the adversary's drones are also similarly armed.
+
 2. Environmental Perception: Drones must be equipped with appropriate sensors (e.g., Radar, LiDAR, Vision systems) to detect and track other drones within their operational vicinity. Additionally, drones should be able to classify targets as friendly or hostile based on sensor inputs and identification protocols.
+
 3. Swarm Coordination Algorithm: A robust and efficient algorithm is required to coordinate the swarm in real time. This algorithm should enable autonomous drones to collaboratively execute efficient manoeuvres for engaging hostile drones and optimise the overall effectiveness of the swarm in tackling threat from hostile drones. Effectiveness means protecting ground assets and minimizing loss of friendly drones.
 
 The primary objective of this problem is to develop a decentralized swarm manoeuvre algorithm for autonomous drones operating in a protective role. The algorithm should enable drones to collectively execute swarming manoeuvres-swarming means quickly bringing more forces together against a smaller enemy to gain an advantage, while staying away from battles where the enemy has more troops.
@@ -5378,6 +5439,7 @@ To validate the solution’s effectiveness, a stochastic simulation framework mu
 Enemy drones are assumed to be of two types.
 
 1. Drones armed with air to air weapon, which will be a threat to friendly drones.
+
 2. Drones with ground attack capability.
 
 ### Left Unattended
@@ -5428,11 +5490,17 @@ Without integrated smart systems, it becomes difficult to balance religious trad
 Participants are expected to design scalable, cost-effective, and user-friendly technology solutions for crowd management in pilgrimage centers. Solutions may include:
 
 1. AI/ML-based Crowd Prediction Models - Forecasting visitor surges based on historical data, weather, holidays, and festival calendars.
+
 2. Smart Queue & Ticketing Systems - Virtual queue management, digital darshan passes, and real-time updates via mobile apps and kiosks.
+
 3. IoT & Surveillance Systems - Sensors, CCTV with AI analytics, and drones for crowd density monitoring and automated alerts.
+
 4. Emergency & Safety Solutions - Real-time panic detection, smart barricade systems, AI-enabled first responder alerts, and medical assistance mapping.
+
 5. Traffic & Mobility Management - Intelligent parking guidance, shuttle/bus coordination, and dynamic traffic flow systems integrated with city police.
+
 6. Pilgrim Engagement Platforms - Multilingual apps providing information on wait times, temple timings, routes, facilities, and emergency contacts.
+
 7. Accessibility Features - Navigation assistance and priority services for elderly and differently-abled pilgrims.
 
 The proposed solution should ensure devotee safety, reduced waiting times, smooth mobility, and improved pilgrimage experience, while being scalable across different temple towns in India.
@@ -5473,10 +5541,15 @@ There is a strong need to develop integrated smart solutions that combine IoT, A
 Participants are expected to design innovative, technology-driven, and scalable solutions for smart management of Sabarmati Riverfront and urban water bodies, including but not limited to:
 
 1. IoT & Sensor-Based Water Quality Monitoring - Deploying low-cost sensors, drones, or autonomous floating devices for real-time data collection and predictive analytics.
+
 2. Smart Waste Detection & Removal - AI/ML-enabled systems for identifying and cleaning floating waste, plastic, and sewage.
+
 3. Flood Prediction & Water Level Management Tools - AI-based forecasting models integrated with weather and hydrological data.
+
 4. Citizen Engagement Platforms - Mobile/web apps for reporting issues, volunteering, and spreading awareness on river/water body conservation.
+
 5. Safety & Surveillance Solutions - Smart cameras, drone patrols, AI-enabled drowning detection, and emergency alert systems.
+
 6. Biodiversity Monitoring Tools - AI-driven ecological assessment for sustaining aquatic life and improving environmental indicators.
 
 The solution should be cost-effective, scalable, environmentally sustainable, and user-friendly, with potential to replicate across other urban water bodies in India.
@@ -5504,10 +5577,15 @@ Chhattisgarh has been facing a serious challenge of elephant movement and human-
 Design and development of AI and IoT Powered Intelligent System based on hardware-software integration that can:
 
 1. Detect elephants in real time by integrating multimodal data using IoT-based sensors (thermal cameras, vibration sensors, acoustic sensors, drone surveillance).
+
 2. Differentiate elephants from other animals or humans using AI/ML algorithms for image, video, and audio classification at the edge device.
+
 3. Provide real-time alerts to villagers and forest officers through mobile apps, SMS, sirens, or loudspeakers.
+
 4. Trigger automated non-harmful deterrents (ultrasonic sound, flashing lights, chili-smoke release, or drone buzzing) to safely redirect elephants.
+
 5. Predict elephant migration routes using AI-based behavioural and environmental pattern analysis.
+
 6. Collect data in a centralized cloud dashboard for the Forest Department with predictive analytics (Hotspot detection, movement patterns, conflict prediction).
 
 ## Expected Solution
@@ -5588,9 +5666,13 @@ With future lunar missions aiming for sustained human presence, autonomous robot
 Design and develop a ROS-based autonomous robot prototype capable of:
 
 1. Navigating indoor and outdoor lunar habitat environments.
+
 2. Mapping and localizing in constrained environments using sensor fusion (LiDAR, cameras, IMU).
+
 3. Detecting obstacles and hazards for safe path planning.
+
 4. Monitoring habitat environmental parameters (like temperature and O2 level, etc.,)
+
 5. Demonstrating basic maintenance tasks such as routine patrol and alert signaling.
 
 Participants must develop algorithms and ROS packages for robust autonomous navigation combined with maintenance monitoring, validated in a simulation environment with modelled lunar habitat conditions.
@@ -5598,7 +5680,9 @@ Participants must develop algorithms and ROS packages for robust autonomous navi
 ## Expected Solution
 
 1. ROS package(s) implementing navigation, mapping, and maintenance monitoring.
+
 2. Demonstration in the simulated environment.
+
 3. Demo video showcasing the robot performing autonomous navigation and anomaly detection in the simulated habitat.
 
 ---
@@ -5626,7 +5710,9 @@ While GPT-OSS performs very well in text-based reasoning, it cannot process or r
 ### Key challenges include
 
 1. Aligning vision embeddings with the LLM’s text embedding space without degrading textual capabilities.
+
 2. Sourcing high-quality multimodal datasets that are open and permissive for redistribution.
+
 3. Achieving competitive multimodal performance within reasonable compute budgets.
 
 ## Expected Solution
@@ -5634,9 +5720,13 @@ While GPT-OSS performs very well in text-based reasoning, it cannot process or r
 The proposed/developed solutions are to address the mentioned challenges by creating a reproducible multimodal GPT-OSS model trained with publicly available datasets and an efficient training strategy. Following deliverables are expected:
 
 1. A multimodal GPT-OSS model with vision understanding.
+
 2. Training scripts and dataset manifests for reproducibility.
+
 3. Benchmarks showing competitive performance against other open multimodal models.
+
 4. A foundation for extending GPT-OSS into more advanced multimodal reasoning domains.
+
 5. **Linkage to ISRO EO Data:** Augmentation of vision capabilities in state-of-the-art LLMs can be adapted for EO data analysis and interpretation. Such system could support highly accurate & automated Land-cover classification, change detection and environment monitoring by producing natural language explanations that cite visual evidence. Project aims to bridge the gap between Level-1 and Level-2 EO Data and decision makers/application users by enabling conversational exploration of large geospatial archives, interactive QA over time-series imagery and generation of rich, human readable reports that combine spatial analytics with domain specific reasoning.
 
 ---
@@ -5664,7 +5754,9 @@ This mismatch creates a significant challenge: how can we generate high-resoluti
 The problem requires the development of a deep learning pipeline capable of producing super-resolved thermal IR imagery by leveraging both thermal and optical data. The pipeline must address three major challenges:
 
 1. **Multi-Sensor Alignment** - Geometrically co-registering high-resolution optical images with low-resolution TIR data.
+
 2. **Fusion of Modalities** - Effectively combining spatial detail from optical imagery with temperature fidelity from thermal imagery without introducing artifacts.
+
 3. **Super-Resolution of Thermal Imagery** - Up-sampling the coarse thermal data to a finer spatial resolution guided by optical details.
 
 The generated outputs must be thermally consistent (faithful to real temperature values) and spatially sharp (preserving fine boundaries). This solution has direct applications in urban planning, wildfire management, and precision agriculture.
@@ -5674,10 +5766,15 @@ The generated outputs must be thermally consistent (faithful to real temperature
 Participants are expected to design a fusion-based solution that may involve AI/ML methods as well as physics-based approaches to improve the accuracy and reliability of thermal super-resolution. The solution should:
 
 1. Align optical and thermal data accurately, ensuring geometric co-registration between multi-sensor imagery.
+
 2. Leverage optical features (edges, land cover boundaries, textures) to guide the super-resolution process.
+
 3. Preserve thermal fidelity by maintaining physically consistent surface temperatures and avoiding transfer of false textures.
+
 4. Incorporate physics-based priors or models (e.g., radiative transfer, emissivity correction, or energy balance principles) to strengthen the reliability of outputs, especially in regions where optical data may be misleading.
+
 5. Generate high-resolution thermal IR maps that are both physically meaningful and suitable for real-world applications such as urban planning, wildfire monitoring, and precision agriculture.
+
 6. Ensure the solution is computationally efficient and scalable for processing large-area satellite imagery.
 
 ## Evaluation
@@ -5721,6 +5818,7 @@ They must implement a complete system that supports:
    - Normalize/remove dynamic values (IDs, timestamps, tokens, etc.).
 
 3. **Tokenization & Input Transformation:** - Convert normalized requests into token sequences suitable for a Transformer-based model.
+
 4. **Model Training:** - Train an open-source Transformer-based model.
    - Participants are free to select transformer architecture.
    - Training can happen before the grand finale.
@@ -5739,12 +5837,19 @@ They must implement a complete system that supports:
 ## Expected Solution
 
 1. **Ingestion:** Batch and real-time ingestion of access logs (commonly used format by apache/nginx).
+
 2. **Parser:** Structured extraction, normalization.
+
 3. **Tokenizer:** Prepares request sequence for Transformer.
+
 4. **Model Training:** Transformer model trained on benign traffic.
+
 5. **Integration:** Model integration into Apache/Nginx pipeline (via module, sidecar, or external micro service).
+
 6. **Non-Blocking Detection:** Concurrent inference on real world traffic.
+
 7. **Continuous Update:** Script / API for periodic retraining on incremental data only.
+
 8. **Demo:** Live test of malicious input triggering detection log.
 
 ---
@@ -5796,9 +5901,13 @@ The assistant should act as a middleware layer between the user and the SIEM and
 A working NLP-driven assistant that:
 
 1. Translates natural language queries into optimized Elasticsearch DSL/KQL queries.
+
 2. Supports multi-turn, context-aware investigations.
+
 3. Generates textual, tabular, and graphical reports on-demand.
+
 4. Integrates with Elastic/Wazuh SIEMs via APIs without modifying their core.
+
 5. Applies intelligent query handling and error recovery to ensure reliable results.
 
 ---
@@ -5820,8 +5929,11 @@ A working NLP-driven assistant that:
 Develop an offline-capable Android application that allows fishermen, inspectors, or buyers to point their phone camera at the catch in maritime domain and instantly:
 
 1. Identify fish species present (from a set of known species)
+
 2. Estimate health/freshness/Quality indicators (based on defined attributes)
+
 3. Count and estimate weight/volume from image/images
+
 4. Store results with geotagging & timestamp for traceability
 
 ## Challenges
@@ -5898,6 +6010,7 @@ The AI assistant should provide psychological companionship to humans, short ada
 ### Performance outcome (subjective evaluation)
 
 1. Detect human emotions based on voice tone and facial expressions.
+
 2. Offers short supportive interactions and evidence based interventions.
 
 ## Deliverables
@@ -5987,8 +6100,11 @@ Air pollution in rapidly urbanizing megacities such as Delhi poses a persistent 
 The proposed system will integrate high-resolution meteorological forecast fields from reanalysis data with satellite-derived gaseous concentrations (e.g. tropospheric NO2, CO, HCHO) to:
 
 1. Develop a robust preprocessing pipeline ensures spatial alignment, temporal synchronization, and feature engineering of key meteorological variables.
+
 2. The harmonized dataset will then be used to train models by capturing complex nonlinear relationships between trace gases, meteorological drivers, and temporal dynamics.
+
 3. Model evaluation will then be carried out using standard metrics (RMSE, MAE, Bias) with reference to ground-based measurements.
+
 4. Demonstrate case study on high pollution and in critically affected cities like Delhi.
 
 ## Expected Solution
@@ -6035,7 +6151,9 @@ This application interfaces:
 ### Features
 
 1. Implemented solutions shall have good modularity to allow easy upgradation.
+
 2. KM service and email service login feature.
+
 3. Multi level of security configuration:
    - **Level 1- Quantum Secure:** use One Time Pad No Quantum security.
    - **Level 2- Quantum-aided AES:** use Quantum keys as seed for AES.
@@ -6568,7 +6686,9 @@ An AI-powered solution can bridge the gap between generic suggestions and effect
 A software solution that takes an employee's profile (performance ratings, experience history, Assessment Development Centre scores) and a target key role's ""Success Profile"" as input. The system should:
 
 1. Identify and quantify specific competency gaps.
+
 2. Recommend a personalized set of development activities, such as specific job rotations, enrichment opportunities, internal training modules, or mentorship pairings with senior leaders.
+
 3. Provide a dashboard for employees and the committee to track progress against the IDP.
 
 ---
@@ -7022,9 +7142,13 @@ The deployment of Electric Hydraulic System (EHS) based Simba drills in place of
 ### Advantages of EHS Simba Drill
 
 1. Enhanced drilling precision and speed.
+
 2. Significant reduction in safety hazards associated with compressed air systems.
+
 3. Improved energy efficiency and environmental compliance.
+
 4. Lower maintenance costs and higher equipment availability.
+
 5. Greater adaptability to modern automated drilling systems.
 
 ---
@@ -7046,6 +7170,7 @@ The deployment of Electric Hydraulic System (EHS) based Simba drills in place of
 The problem of skill enhancement in colleges is a major issue, especially when it comes to preparing students for the job market. In the context of the New Education Policy (NEP) 2020, Semester 5 for internships refers to the fifth semester of a 4-year undergraduate degree (typically under the Multidisciplinary Four-Year Undergraduate Programme). Key features of NEP include:
 
 1. Emphasis on Experiential Learning - NEP promotes hands-on learning through internships, fieldwork, and apprenticeships. Semester 5 is typically when students have completed basic foundational and disciplinary courses, and they are ready for practical exposure to apply their knowledge in real-life settings.
+
 2. Timing in the 4-Year Program - In a 4-year UG program:
    - Semester 1-2: Foundation courses;
    - Semester 3-4: Major-specific and interdisciplinary subjects;
@@ -7053,7 +7178,9 @@ The problem of skill enhancement in colleges is a major issue, especially when i
    - Semester 7-8: Research, specialization, or advanced projects. Semester 5 is when students begin industry, research, or community internships to gain practical experience.
 
 3. Flexibility in Internships - Internships may be in industries relevant to the student's major, with NGOs, government departments, or research institutions, and can be short-term (during summer) or extended (as part of credit-based coursework).
+
 4. Credit-Based Evaluation - Internships under NEP can be credit-bearing, i.e., they count towards the student's academic score, and students are often required to submit a report or presentation to reflect learning outcomes.
+
 5. Career Readiness - By Semester 5, students begin career exploration, networking, and gaining experience that prepares them for final-year placements, startups or entrepreneurship, and higher education or research.
 
 In short, "Semester 5 for internships" in NEP means students, by the 5th semester of their undergraduate program, should engage in industry or field-based internships to develop practical skills, gain exposure, and align learning with real-world needs, in line with NEP's emphasis on holistic and experiential education.
@@ -7061,11 +7188,17 @@ In short, "Semester 5 for internships" in NEP means students, by the 5th semeste
 The internship system often fails in colleges-especially under the NEP model-for several critical reasons:
 
 1. Lack of Industry Tie-ups - Limited partnerships with companies, no proper MoUs or placement cells.
+
 2. Poor Planning and Late Implementation - Programs introduced suddenly without planning.
+
 3. No Monitoring or Mentorship - No faculty supervision or follow-up.
+
 4. Students Not Industry-Ready - Lack of skills discourages companies from taking interns.
+
 5. Unavailability of Quality Internships in Rural/Remote Areas - Limited industry presence; ineffective online internships.
+
 6. Administrative and Logistical Failures - Poor coordination, lack of funding, and unclear guidelines.
+
 7. Fake Internships and Certificate Mills - Students buying certificates or joining non-functional organizations.
 
 ## Description
@@ -7075,7 +7208,9 @@ Solution for the gap is student-industry-college tie-up to develop an app for so
 ## Stakeholders & Their Roles
 
 1. Students - Data enrolment in the app, conduct surveys to gather real internship pain points, design and develop the app.
+
 2. College - Provide mentorship and faculty coordinator, offer academic credit for student work (as per NEP), facilitate outreach to companies and sign MoUs, host the app under the institution's digital portal.
+
 3. Industry Partners - Share real-time internship openings, provide API access or dashboards to manage intern applications, offer short-term/remote internship slots for trial, work in hybrid mode.
 
 **Implementation Strategy** - Stakeholder collaboration with government education departments, college faculty, NGOs, and counselors for content and outreach; technology development partner to build a scalable, lightweight app with offline features; pilot launch in select districts; full-scale rollout through government colleges and skill centers; real-time monitoring and feedback.
@@ -7083,11 +7218,17 @@ Solution for the gap is student-industry-college tie-up to develop an app for so
 ## Expected Outcomes
 
 1. Streamlined Internship Process - One-stop solution to find, apply, track, and complete internships.
+
 2. Increased Internship Participation - Easier access and transparency, especially for rural students.
+
 3. Skill Development & Readiness - Real-world experience with pre-internship training modules.
+
 4. Better Faculty Involvement - Dashboards to track progress and provide feedback.
+
 5. Stronger College-Industry Connect - Regular interaction, partnerships, live projects, and events.
+
 6. Authentic, NEP-Compliant Reports - Real-time logbooks and formatted reports to prevent fakes.
+
 7. Data for Academic Improvement - App analytics for insights on industries, skill gaps, and performance.
 
 ## Proposed Solution
@@ -7095,11 +7236,17 @@ Solution for the gap is student-industry-college tie-up to develop an app for so
 To create a centralized, digital platform that simplifies and strengthens the internship process, ensures NEP compliance, enhances skill development, and fosters real-time collaboration between students, faculty, and industry. App will work under the following modules:
 
 1. Student-Centered Internship Portal
+
 2. Industry Collaboration Module
+
 3. Faculty & Admin Panel
+
 4. Skill Readiness & Learning Resources
+
 5. Automatic Logbook & Report Generator
+
 6. Credit Integration System
+
 7. Notifications & Alerts
 
 ---
@@ -7961,9 +8108,13 @@ Centre routinely handles diverse data types: PDF, DOC, Images, screenshots, reco
 SIH Participants are to build a multimodal RAG-based system that:
 
 1. Ingests multimodal inputs - Extract textual content from DOCX/PDF, generate embeddings for images, and perform speech-to-text conversion for audio.
+
 2. Indexes all modalities in a shared vector space for seamless semantic retrieval.
+
 3. Supports natural-language queries, retrieving relevant text snippets, images, and audio segments.
+
 4. Generates grounded summaries or answers, integrating retrieved context via LLM.
+
 5. Establishes cross-format links, e.g., connecting an audio transcript segment to a cited paragraph and screenshot.
 
 ## Expected Solution
