@@ -1,0 +1,713 @@
+/* ========================================================================= */
+/* 1. THEME DEFINITIONS (CSS Variables) */
+/* ========================================================================= */
+
+:root {
+  /* Colors (based on theme.js) */
+  --color-primary: #3b82f6; /* Blue 500 */
+  --color-primary-dark: #2563eb; /* Blue 600 */
+  --color-secondary: #6366f1; /* Indigo 500 */
+  --color-success: #10b981; /* Green 500 */
+  --color-error: #ef4444; /* Red 500 */
+
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-900: #111827;
+
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+
+  /* Breakpoints */
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+}
+
+/* ========================================================================= */
+/* 2. BASE STYLES & LAYOUT */
+/* ========================================================================= */
+
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background);
+  color: var(--color-gray-900);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: var(--space-xl) auto;
+  padding: 0 var(--space-md);
+  min-height: calc(100vh - 100px); /* Adjust based on header height */
+}
+
+/* Utility: Hidden Input */
+input[type="file"] {
+  display: none;
+}
+
+/* ========================================================================= */
+/* 3. HEADER (Header.jsx) */
+/* ========================================================================= */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-surface);
+  box-shadow:
+    0 1px 3px 0 rgb(0 0 0 / 0.1),
+    0 1px 2px -1px rgb(0 0 0 / 0.1);
+  padding: var(--space-md) 0;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.logo p {
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.problem-counter {
+  color: var(--color-gray-500);
+  font-size: 0.9rem;
+}
+
+.back-button {
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-700);
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: var(--color-gray-200);
+}
+
+/* ========================================================================= */
+/* 4. FILE UPLOAD (FileUpload.jsx) */
+/* ========================================================================= */
+
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  border: 4px dashed var(--color-gray-300);
+  border-radius: 16px;
+  background-color: var(--color-surface);
+  transition: all 0.3s ease;
+  padding: var(--space-xl);
+  text-align: center;
+  margin-top: var(--space-xl);
+}
+
+.file-upload.drag-over {
+  border-color: var(--color-primary);
+  background-color: var(--color-gray-50);
+}
+
+.upload-icon {
+  font-size: 4rem;
+  margin-bottom: var(--space-md);
+}
+
+.upload-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-gray-900);
+  margin: 0;
+}
+
+.upload-description {
+  color: var(--color-gray-500);
+  margin-bottom: var(--space-xl);
+}
+
+.upload-button {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.upload-button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Loading Spinner (LoadingSpinner.jsx) */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-top: var(--space-md);
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid var(--color-primary);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ========================================================================= */
+/* 5. SEARCH & FILTERS (SearchBar.jsx, QuickFilters.jsx) */
+/* ========================================================================= */
+
+.search-container {
+  margin-bottom: var(--space-lg);
+  padding-top: var(--space-lg);
+}
+
+.search-inputs {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+.search-input-wrapper {
+  flex-grow: 1;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: var(--space-md) var(--space-lg);
+  padding-right: 3rem; /* Space for clear button */
+  border: 1px solid var(--color-gray-300);
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+.clear-button {
+  position: absolute;
+  right: var(--space-sm);
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--color-gray-400);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: var(--space-sm);
+  line-height: 0;
+  transition: color 0.2s;
+}
+
+.clear-button:hover {
+  color: var(--color-gray-600);
+}
+
+.category-select {
+  padding: var(--space-md) var(--space-lg);
+  border: 1px solid var(--color-gray-300);
+  border-radius: 12px;
+  font-size: 1rem;
+  background-color: var(--color-surface);
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M7 10l5 5 5-5H7z' fill='%239CA3AF'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 0.8rem;
+}
+
+/* Quick Filters */
+.quick-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.filter-button {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-md);
+  border: 1px solid var(--color-gray-300);
+  border-radius: 9999px;
+  background-color: var(--color-surface);
+  color: var(--color-gray-700);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.filter-button:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.filter-button.active {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  border-color: var(--color-primary);
+}
+
+.filter-button .count {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 1px 6px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+}
+
+.filter-button.active .count {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Results Summary */
+.results-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-lg);
+  font-size: 0.9rem;
+  color: var(--color-gray-500);
+}
+
+.clear-all-button {
+  background: none;
+  border: none;
+  color: var(--color-error);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0;
+}
+
+/* No Results */
+.no-results {
+  text-align: center;
+  padding: var(--space-2xl) 0;
+  border: 2px dashed var(--color-gray-200);
+  border-radius: 12px;
+  background-color: var(--color-surface);
+}
+
+.no-results-icon {
+  font-size: 3rem;
+  margin-bottom: var(--space-md);
+}
+
+.no-results p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0;
+  color: var(--color-gray-700);
+}
+
+.no-results-subtitle {
+  color: var(--color-gray-500);
+  font-size: 1rem;
+}
+
+/* ========================================================================= */
+/* 6. PROBLEM GRID (ProblemCard.jsx) */
+/* ========================================================================= */
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-lg);
+}
+
+.problem-card {
+  background: var(--color-surface);
+  border-radius: 16px;
+  padding: var(--space-lg);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  border: 1px solid var(--color-gray-200);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.problem-card:hover {
+  box-shadow:
+    0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transform: translateY(-2px);
+  border-color: var(--color-primary);
+}
+
+.gradient-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(
+    90deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  opacity: 0.6;
+  transition: height 0.3s ease;
+}
+
+.problem-card:hover .gradient-accent {
+  height: 100%;
+  opacity: 0.1;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-md);
+}
+
+.problem-id {
+  font-weight: 700;
+  color: var(--color-primary);
+  background-color: var(--color-gray-100);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.category-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  text-transform: uppercase;
+}
+
+.category-badge.software {
+  background-color: #dbeafe; /* Light Blue */
+  color: #1e40af; /* Dark Blue */
+}
+
+.category-badge.hardware {
+  background-color: #d1fae5; /* Light Green */
+  color: #065f46; /* Dark Green */
+}
+
+.problem-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 var(--space-xs) 0;
+  color: var(--color-gray-800);
+  line-height: 1.3;
+}
+
+.problem-org {
+  font-size: 0.9rem;
+  color: var(--color-gray-500);
+  margin: 0 0 var(--space-md) 0;
+}
+
+.problem-theme {
+  margin-top: auto;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+/* ========================================================================= */
+/* 7. DETAIL VIEW (ProblemDetail.jsx) */
+/* ========================================================================= */
+
+.problem-detail {
+  padding-top: var(--space-xl);
+}
+
+/* Detail Navigation */
+.detail-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md);
+  margin-bottom: var(--space-xl);
+  background-color: var(--color-surface);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.detail-nav-counter {
+  font-weight: 600;
+  color: var(--color-gray-600);
+}
+
+.detail-nav-buttons {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.nav-button {
+  padding: var(--space-xs) var(--space-md);
+  border: 1px solid var(--color-gray-300);
+  border-radius: 9999px;
+  background-color: var(--color-surface);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-button:hover:not(:disabled) {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+}
+
+.nav-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Metadata Section */
+.metadata-section {
+  background-color: var(--color-surface);
+  border-radius: 12px;
+  padding: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.metadata-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-md);
+}
+
+.metadata-item {
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.metadata-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-gray-500);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-bottom: 4px;
+}
+
+.metadata-icon {
+  font-size: 1rem;
+}
+
+.metadata-value {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-gray-900);
+  display: block;
+}
+
+/* Content Section */
+.content-section {
+  background-color: var(--color-surface);
+  border-radius: 12px;
+  padding: var(--space-xl);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.problem-title-detail {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: var(--space-lg);
+  color: var(--color-gray-900);
+  line-height: 1.2;
+}
+
+.problem-content {
+  line-height: 1.7;
+}
+
+.problem-content h1,
+.problem-content h2,
+.problem-content h3 {
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-md);
+  font-weight: 700;
+  color: var(--color-gray-900);
+}
+
+.problem-content h2 {
+  font-size: 1.75rem;
+  border-bottom: 2px solid var(--color-gray-100);
+  padding-bottom: 4px;
+}
+
+.problem-content h3 {
+  font-size: 1.25rem;
+  color: var(--color-primary-dark);
+}
+
+.problem-content p {
+  margin-bottom: var(--space-md);
+}
+
+.problem-content ul {
+  list-style: disc;
+  padding-left: var(--space-xl);
+  margin-bottom: var(--space-md);
+}
+
+.problem-content li {
+  margin-bottom: var(--space-xs);
+}
+
+/* Markdown Highlights (Used by utils/utils.js) */
+mark {
+  background: #fef3c7; /* Tailwind yellow-100 */
+  padding: 0.1em 0.2em;
+  border-radius: 3px;
+}
+
+/* Shortcuts Info */
+.shortcuts-info {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xl);
+  margin-top: var(--space-lg);
+  color: var(--color-gray-500);
+  font-size: 0.85rem;
+}
+
+.shortcuts-info span {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+kbd {
+  background-color: var(--color-gray-100);
+  border-radius: 4px;
+  border: 1px solid var(--color-gray-300);
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  box-shadow: 0 2px 0 var(--color-gray-300);
+}
+
+/* ========================================================================= */
+/* 8. MEDIA QUERIES (Responsiveness) */
+/* ========================================================================= */
+
+/* Tablet and below (md: 768px) */
+@media (max-width: 768px) {
+  .main-content {
+    margin: var(--space-lg) auto;
+  }
+
+  .problem-grid {
+    grid-template-columns: 1fr; /* Single column on mobile */
+  }
+
+  .search-inputs {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .category-select,
+  .search-input {
+    width: 100%;
+  }
+
+  .detail-nav {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .detail-nav-buttons {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* Larger screens (lg: 1024px) */
+@media (min-width: 1024px) {
+  .problem-title-detail {
+    font-size: 2.5rem;
+  }
+}
