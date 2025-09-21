@@ -2283,7 +2283,6 @@ Develop an AI-powered automated compliance checker that can scan e-commerce plat
 
 1. A working prototype of the compliance checker tool (Web-based or standalone app)
 2. Technical documentation including:
-
    - Data pipeline design
    - OCR and ML models used
    - Validation methodology
@@ -2339,7 +2338,6 @@ The proposed solution may also leverage AI/ML, digital forensics, tamper-evident
 ## Key Functional Requirements
 
 1. Tamper Detection:
-
    - Detect unauthorized access to device internals (e.g., seals broken, circuit modifications, etc.)
    - Monitor anomalies in calibration, weight drift, or suspicious patterns
    - Firmware Integrity
@@ -2347,12 +2345,10 @@ The proposed solution may also leverage AI/ML, digital forensics, tamper-evident
    - Logging of unauthorized software firmware updates
 
 2. Alert System:
-
    - Instant tamper alerts to remote Legal Metrology dashboards
    - Optional local visual/audio alarms on tamper detection
 
 3. Data Logging & Traceability:
-
    - Immutable logs of measurements, maintenance, and access events
    - Optionally backed by blockchain or secure cloud
 
@@ -3177,7 +3173,6 @@ Kochi Metro must decide every night which of its 25 four-car trainsets will ente
 5. Cleaning & Detailing Slots - available manpower and bay occupancy for interior deep-cleaning.
 6. Stabling Geometry - physical bay positions that minimise nightly shunting and morning turn-out time.
    At present these data points reside in siloed spreadsheets, manual logbooks, and daily WhatsApp updates. Supervisors reconcile them in a time-compressed window (21:00-23:00 IST) using ad-hoc filters and experience-based heuristics. The process is opaque, non-repeatable, and highly error-prone:
-
    - Missing a single telecom clearance can force an unscheduled rake withdrawal, eroding the 99.5 % punctuality KPI.
    - Uneven mileage assignment accelerates component fatigue, inflating maintenance cost.
    - Inadequate visibility into branding priorities risks breaching advertiser SLAs, exposing KMRL to revenue penalties.
@@ -3657,23 +3652,18 @@ Proposals should focus on enhancing the modeling process rather than traffic opt
 For more information on relevant tools, please refer to the following links:
 
 - Driving Scenario Designer - Design driving scenarios, configure sensors, and generate synthetic data - MATLAB
-
   - https://in.mathworks.com/help/driving/ref/drivingscenariodesigner-app.html?requestedDomain=
 
 - GitHub - MathWorks/OpenTrafficLab
-
   - https://github.com/mathworks/OpenTrafficLab
 
 - Create Driving Scenario Variations Programmatically - MATLAB & Simulink
-
   - https://in.mathworks.com/help/driving/ug/create-driving-scenario-variations-programmatically.html?requestedDomain=
 
 - Sensor Simulation and Virtual Scene Design with the Driving Scenario Designer App, Part 1 - MATLAB
-
   - https://in.mathworks.com/videos/driving-scenario-designer-1529302116471.html?s_tid=srchtitle_videos_main_1_driving+scenario
 
 - Import OpenStreetMap Data into Driving Scenario - MATLAB & Simulink
-
   - https://in.mathworks.com/help/driving/ug/import-openstreetmap-data-into-driving-scenario.html
 
 ---
@@ -3887,12 +3877,10 @@ The Forest Rights Act (FRA), 2006 recognizes the rights of forest-dwelling commu
 ## AI & Tech Components
 
 1. Data Digitization
-
    - Use suitable models to extract and standardize text from scanned FRA documents.
    - Apply Named Entity Recognition (NER) to identify village names, patta holders, coordinates, and claim status.
 
 2. AI-based Asset Mapping
-
    - Employ Computer Vision on high-resolution satellite imagery to detect:
    - Agricultural land
    - Forest cover
@@ -3902,13 +3890,11 @@ The Forest Rights Act (FRA), 2006 recognizes the rights of forest-dwelling commu
    - Add layers of information with respect to forest data, groundwater data, and infrastructure data (e.g., PM Gati Shakti).
 
 3. WebGIS Integration
-
    - Interactive layers (IFR/CR, village boundaries, land-use, assets)
    - Filters by state/district/village/tribal group
    - FRA progress tracking (village/block/district/state level)
 
 4. Decision Support System (DSS)
-
    - Build a rule-based + AI-enhanced DSS engine that:
    - Cross-links FRA holders with eligibility for CSS schemes such as DAJGUA and others.
    - Prioritizes interventions (e.g., borewells under Jal Shakti for villages with low water index).
@@ -4812,7 +4798,6 @@ Develop an AI/ML-based credit scoring model that:
 1. Uses historical repayment behaviour, loan utilization patterns, and repeat borrowing data (if any)
 
 2. Integrates income level assessment using reliable consumption-based metrics with an option for beneficiaries to upload consumption details e.g.:
-
    - Household energy consumption (electricity usage patterns)
    - Mobile recharge frequency and amounts (aggregated, anonymized)
    - Utility bill payment patterns
@@ -5201,7 +5186,6 @@ Design and develop an AI-powered Next-Generation Firewall (NGFW) that integrates
 ## Expected Outcomes
 
 - A production-ready prototype demonstrating:
-
   - Sub-second detection and mitigation latency for threats, including zero-day attacks and polymorphic malware.
   - Seamless enforcement of Zero Trust principles with adaptive access controls.
   - Predictive threat modelling powered by continuous learning pipelines.
@@ -5242,38 +5226,31 @@ This problem requires the design and implementation of a multi-layered technical
 ### Key technical requirements include
 
 1. Real-Time AI-Generated Content Detection
-
    - Deploy advanced transformer-based classifiers (e.g., RoBERTa, T5, or GPT detectors) trained on large-scale, labeled datasets of AI-generated vs. human-generated content.
    - Utilize stylometric and semantic feature extraction to identify LLM-specific language patterns, entropy levels, and token probability distributions.
    - Implement multi-modal detection by analyzing text, metadata, and social graph propagation patterns simultaneously.
 
 2. Attribution and Forensics
-
    - Build forensic watermarking and fingerprinting techniques to tag, trace, and verify LLM outputs, leveraging solutions like OpenAI watermarking APIs or cryptographic hashes.
    - Use reverse engineering and stylometric analysis to attribute content to specific model families or platforms.
 
 3. Graph-Based Threat Intelligence and Monitoring
-
    - Integrate graph neural networks (GNNs) to map disinformation clusters, actor coordination patterns, and propagation chains across platforms.
    - Develop APIs for integration with threat intelligence platforms and security information and event management (SIEM) tools for real-time correlation.
 
 4. Cross-Border Intelligence Sharing
-
    - Create a federated detection and intelligence-sharing protocol that enables secure data exchange between allied nations without violating data localization and privacy laws.
    - Utilize standardized APIs and blockchain-based audit trails for tamper-proof information sharing.
 
 5. Automated Risk and Threat Assessment
-
    - Build dashboard-driven analytics with real-time risk scoring and visualization layers for national security agencies.
    - Include heatmaps, temporal trend analysis, and predictive modelling for proactive threat anticipation.
 
 6. Vendor Collaboration and Red-Teaming
-
    - Partner with LLM providers to enforce Responsible AI guidelines, such as abuse-limiting guardrails and adversarial testing protocols.
    - Conduct continuous red-team simulations to expose vulnerabilities and strengthen platform defences.
 
 7. Privacy and Compliance Integration
-
    - Embed privacy-preserving techniques, including federated learning and differential privacy, to ensure data security and adherence to legal frameworks.
    - Incorporate transparency reporting and explainable AI (XAI) layers to maintain accountability and public trust.
 
@@ -5708,11 +5685,9 @@ Participants are expected to design a fusion-based solution that may involve AI/
 Solutions will be evaluated based on:
 
 - Quantitative Metrics:
-
   - PSNR, SSIM, and RMSE (Kelvin) against reference thermal images.
 
 - Qualitative Metrics:
-
   - Edge sharpness, alignment accuracy, and fusion realism (avoiding optical artifacts).
 
 ---
@@ -5740,30 +5715,24 @@ Participants will be provided with 3 (THREE) sample web application in war compr
 They must implement a complete system that supports:
 
 1. **Log Ingestion:** - Collect access logs from the web server (Apache or Nginx).
-
    - Supports both batch ingestion (historical logs) and streaming ingestion (tailing live logs).
 
 2. **Parsing & Normalization:** - Extract key fields (method, path, parameters, headers, payload, etc.).
-
    - Normalize/remove dynamic values (IDs, timestamps, tokens, etc.).
 
 3. **Tokenization & Input Transformation:** - Convert normalized requests into token sequences suitable for a Transformer-based model.
 4. **Model Training:** - Train an open-source Transformer-based model.
-
    - Participants are free to select transformer architecture.
    - Training can happen before the grand finale.
 
 5. **Real-Time Inference & Live Detection:** - Deploy the trained model alongside the sample app and integrate it with Apache or Nginx.
-
    - The WAF component must receive each incoming request in real time and detect any anomalous request.
    - Detections must run in non-blocking mode i.e multiple requests should be scanned simultaneously, without blocking each other or delaying normal traffic.
 
 6. **Continuous Updates:** - Provide an automated mechanism to re-train or fine-tune the existing model on new benign traffic.
-
    - Update should be incremental, there should not be a need to retrain the model on full data, training will be done only on incremental data.
 
 7. **Demonstration:** - Use the supplied web application to show live detection of malicious requests.
-
    - Participants will inject malicious payloads (e.g., via curl or script) to test detection.
    - Judges will provide payload, requests to be done during grand finale to detect accuracy and detection ratio.
 
@@ -5801,12 +5770,10 @@ ELK-based SIEMs such as Elastic SIEM and Wazuh provide powerful log collection, 
 The task is to build an NLP-powered interface that connects directly with ELK SIEMs (Elastic SIEM/Wazuh) and supports two core functions:
 
 1. **Conversational Investigations:** - Support multi-turn natural language queries, e.g., What suspicious login attempts occurred yesterday?” followed by “Filter only VPN-related attempts.”
-
    - Preserve context across follow-up queries.
    - Translate natural language into Elasticsearch DSL or KQL, execute queries, and return structured results.
 
 2. **Automated Report Generation:** - Accept natural language requests for summaries or reports, e.g., “Generate a summary of malware detections in the past month with charts.”
-
    - Automatically construct SIEM queries, aggregate results, and present them as narratives, tables, or charts.
 
 The assistant should act as a middleware layer between the user and the SIEM and have following components:
@@ -6070,7 +6037,6 @@ This application interfaces:
 1. Implemented solutions shall have good modularity to allow easy upgradation.
 2. KM service and email service login feature.
 3. Multi level of security configuration:
-
    - **Level 1- Quantum Secure:** use One Time Pad No Quantum security.
    - **Level 2- Quantum-aided AES:** use Quantum keys as seed for AES.
    - **Level 3- Any other encryption (like PQC)** may be given as option.
@@ -6134,7 +6100,6 @@ Despite the comprehensive safety regulations laid out by the Directorate General
 
 - Provides role-based daily safety prompts and checklists based on the specific task assigned to each mine worker.
 - Delivers short, engaging safety videos (""Video of the Day"") - animated or real-based on:
-
   - Previous mine accident case studies,
   - DGMS advisories,
   - Testimonials from experienced miners, and
@@ -7082,7 +7047,6 @@ The problem of skill enhancement in colleges is a major issue, especially when i
 
 1. Emphasis on Experiential Learning - NEP promotes hands-on learning through internships, fieldwork, and apprenticeships. Semester 5 is typically when students have completed basic foundational and disciplinary courses, and they are ready for practical exposure to apply their knowledge in real-life settings.
 2. Timing in the 4-Year Program - In a 4-year UG program:
-
    - Semester 1-2: Foundation courses;
    - Semester 3-4: Major-specific and interdisciplinary subjects;
    - Semester 5-6: Internships, field projects, or community engagement;
@@ -7293,19 +7257,16 @@ Traditional crushing and grinding equipment often operate under suboptimal condi
 ## Expected Solutions
 
 1. **AI-Controlled Optimization Systems**
-
    - Real-Time Monitoring & Control: Implement AI-driven systems that continuously monitor variables such as ore hardness, feed size, moisture content, and equipment load.
    - Predictive Maintenance: Use machine learning models to predict wear patterns and schedule maintenance proactively, reducing downtime and energy waste.
    - Dynamic Process Adjustment: AI algorithms can adjust operational parameters (e.g., crusher speed, grinding media size, mill rotation speed) in real time to maintain optimal energy efficiency.
    - Integration with IoT Sensors: Deploy smart sensors to collect high resolution data and feed it into AI models for more accurate decision-making.
 
 2. **Process Simulation and Digital Twins**
-
    - Develop digital twins of crushing and grinding circuits to simulate various operational scenarios and Identify energy-saving opportunities.
    - Use simulation tools to test new equipment designs and control strategies before physical implementation.
 
 3. **Renewable Energy Integration**
-
    - Explore the use of solar or wind energy to power comminution equipment, especially in remote mining locations.
    - Implement energy storage systems to balance load and reduce reliance on fossil fuels.
 
@@ -8189,7 +8150,6 @@ Build an application software which will obfuscate the object file (generated fr
 ## Expected Output
 
 1. Generation of report which
-
    - Logs all the input parameters
    - Logs all the attributes of output file including size, method of obfuscation etc.
    - Give brief information about the amount of bogus code generated
@@ -8241,26 +8201,21 @@ To develop an automated, cross-platform security hardening tool that:
 ## Key Features
 
 1. **OS Detection & Modular Hardening Engine**
-
    - Detects the target OS and runs appropriate modules
    - Customizable hardening level and their values (basic, moderate, strict)
 
 2. **Security Checks & Remediation**
-
    - As per Annexure - ‘A’ for Windows OS and Annexure - ‘B’ for Linux OS
 
 3. **Reporting and Logging**
-
    - Exports PDF reports with severity ratings
    - Logs all actions with timestamps for audit trails
 
 4. **CLI & GUI Interfaces**
-
    - CLI for automation and scripting
    - Optional GUI for ease of use
 
 5. **Rollback Capability**
-
    - Stores previous configurations for rollback after enforcement
 
 **Dataset:** https://sih.gov.in/dataset/Annexure_A_B_NTRO_SIH25237.pdf

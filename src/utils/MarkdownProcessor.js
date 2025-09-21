@@ -1,5 +1,3 @@
-// src/utils/MarkdownProcessor.js
-
 const MarkdownProcessor = {
   extractMetadata: (section, key) => {
     const match = section.match(new RegExp(`\\*\\*${key}:\\*\\* (.+)`));
@@ -51,14 +49,37 @@ const MarkdownProcessor = {
 
   toHTML: (markdown) => {
     let html = markdown
-      // Headings
+      // 1. REMOVE HORIZONTAL RULES (lines with 3 or more hyphens)
+      .replace(/^[\s-]*[-]{3,}[\s-]*$/gm, "")
+
+      // 2. CONVERT STANDARD MARKDOWN LINKS: [text](url)
+      // This must happen before processing plain URLs
+      .replace(
+        /\[([^\]]+)\]\(([^)]+)\)/g,
+        '<a href="$2" target="_blank">$1</a>',
+      )
+
+      // 3. CONVERT EMBEDDED/PLAIN URLs (must exclude strings already inside <a> tags)
+      // This regex looks for URLs starting with http:// or https:// that are NOT immediately preceded by a quote (to avoid reprocessing links inside existing HTML tags)
+      .replace(
+        /(?<!["'])(\bhttps?:\/\/\S+)/g,
+        '<a href="$1" target="_blank">$1</a>',
+      )
+
+      // 4. Handle bold tags (**text** and __text__)
+      .replace(/(\*\*|__)(.+?)\1/g, "<strong>$2</strong>")
+      // 5. Handle italic tags (*text* and _text_)
+      .replace(/(\*|_)(.+?)\1/g, "<em>$2</em>")
+
+      // 6. Handle Headings
       .replace(/^### (.*$)/gim, "<h3>$1</h3>")
       .replace(/^## (.*$)/gim, "<h2>$1</h2>")
       .replace(/^# (.*$)/gim, "<h1>$1</h1>")
-      .replace(/^---$/gim, "")
+
+      // 7. Paragraph and List Processing
       .split("\n\n")
       .map((paragraph) => {
-        // Skip list processing if it's a heading line (already processed)
+        // Skip list/paragraph processing if it's a heading line
         if (
           paragraph.includes("<h1>") ||
           paragraph.includes("<h2>") ||
@@ -72,12 +93,12 @@ const MarkdownProcessor = {
             .split("\n")
             .filter((line) => line.trim().startsWith("- "));
           const listItems = items
-            .map((item) => `<li>${item.replace("- ", "")}</li>`)
+            .map((item) => `<li>${item.replace("- ", "").trim()}</li>`)
             .join("");
           return `<ul>${listItems}</ul>`;
         }
         // Paragraphs
-        return paragraph.trim() ? `<p>${paragraph}</p>` : "";
+        return paragraph.trim() ? `<p>${paragraph.trim()}</p>` : "";
       })
       .join("\n");
 

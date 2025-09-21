@@ -13,9 +13,31 @@ export const debounce = (func, wait) => {
 export const highlightText = (text, searchTerm) => {
   if (!searchTerm) return text;
   const regex = new RegExp(`(${searchTerm})`, "gi");
-  // The original used <mark> with inline styles, which is fine for highlight
-  return text.replace(
-    regex,
-    '<mark style="background: #fef3c7; padding: 0.1em 0.2em; border-radius: 3px;">$1</mark>',
-  );
+  // Assuming a global CSS class 'highlight-mark' is used for styling
+  return text.replace(regex, '<mark class="highlight-mark">$1</mark>');
+};
+
+// --- HASH ROUTING UTILITIES ---
+
+/**
+ * Gets the current problem ID from the URL hash.
+ * Returns the ID (e.g., 'P-001') or null if not found.
+ */
+export const getProblemIdFromHash = () => {
+  // Hash format: #/problem/P-001
+  const hash = window.location.hash;
+  const match = hash.match(/^#\/problem\/([^/]+)$/);
+  return match ? match[1] : null;
+};
+
+/**
+ * Sets the URL hash to the list view or a specific problem detail view.
+ */
+export const setHashRoute = (problemId) => {
+  if (problemId) {
+    window.location.hash = `/problem/${problemId}`;
+  } else {
+    // Navigate to the root (list view)
+    window.location.hash = "";
+  }
 };
